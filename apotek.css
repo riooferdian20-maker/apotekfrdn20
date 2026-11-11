@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #263b31;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 8%;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+    color: #168653;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+footer h2 span {
+    color: #263b31;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.menu a {
+    color: #52645a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #168653;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    background: #168653;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 80px 8%;
+    background: linear-gradient(120deg, #e7f7ed, #f5fbf7);
+    min-height: 580px;
+}
+
+.banner-content {
+    width: 53%;
+}
+
+.subtitle {
+    color: #168653;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.banner-content h1 {
+    color: #203b2d;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.banner-content h1 span {
+    color: #168653;
+}
+
+.description {
+    color: #718078;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 490px;
+    margin-bottom: 28px;
+}
+
+.banner-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background: #168653;
+    color: white;
+    padding: 14px 23px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    background: #10663e;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #168653;
+    color: #168653;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.banner-info {
+    display: flex;
+    gap: 45px;
+    margin-top: 45px;
+}
+
+.banner-info h3 {
+    color: #168653;
+    font-size: 25px;
+}
+
+.banner-info p {
+    color: #78877e;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* FOTO BANNER */
+
+.banner-image {
+    width: 47%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,70,35,0.13);
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.banner-image img:hover {
+    transform: scale(1.06);
+}
+
+
+/* JUDUL SECTION */
+
+.kategori,
+.produk {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #168653;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    color: #203b2d;
+    font-size: 32px;
+    margin: 13px 0;
+}
+
+.section-heading span {
+    color: #849087;
+    font-size: 14px;
+}
+
+
+/* KATEGORI */
+
+.kategori-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.kategori-card {
+    position: relative;
+    height: 250px;
+    border-radius: 13px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.kategori-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.kategori-card:hover img {
+    transform: scale(1.08);
+}
+
+.kategori-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 17px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,.8));
+}
+
+.kategori-text h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.kategori-text p {
+    font-size: 12px;
+}
+
+
+/* PRODUK */
+
+.produk {
+    background: #f5faf7;
+}
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.produk-card {
+    background: white;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    transition: .3s;
+}
+
+.produk-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0,80,40,.12);
+}
+
+.produk-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.produk-info {
+    padding: 20px;
+}
+
+.produk-info small {
+    color: #168653;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.produk-info h3 {
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+.produk-info p {
+    color: #829087;
+    font-size: 12px;
+    line-height: 1.7;
+    min-height: 62px;
+}
+
+.produk-info a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #168653;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* TENTANG KAMI */
+
+.tentang {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 85px 8%;
+}
+
+.tentang-image {
+    width: 48%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.tentang-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tentang-content {
+    flex: 1;
+}
+
+.tentang-content h2 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin: 15px 0;
+    color: #203b2d;
+}
+
+.tentang-content p:not(.subtitle) {
+    color: #78877e;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.tentang-content .btn-primary {
+    margin-top: 12px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #193b2b;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    color: #72d6a1;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+footer h2 span {
+    color: white;
+}
+
+footer p {
+    color: #c2d6ca;
+    font-size: 13px;
+}
+
+.footer-line {
+    height: 1px;
+    background: #ffffff25;
+    margin: 25px auto;
+    max-width: 800px;
+}
+
+footer small {
+    color: #a7bdb0;
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .kategori-container,
+    .produk-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-content h1 {
+        font-size: 38px;
+    }
+
+    .banner-image {
+        height: 330px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 20px 5%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .banner-content h1 {
+        font-size: 35px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .banner-buttons,
+    .banner-info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: 260px;
+    }
+
+    .kategori,
+    .produk {
+        padding: 60px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .kategori-container,
+    .produk-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
+    }
+
+    .kategori-card {
+        height: 190px;
+    }
+
+    .produk-card img {
+        height: 130px;
+    }
+
+    .produk-info {
+        padding: 12px;
+    }
+
+    .produk-info h3 {
+        font-size: 15px;
+    }
+
+    .tentang {
+        flex-direction: column;
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .tentang-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .tentang-content h2 {
+        font-size: 27px;
+    }
+  }
